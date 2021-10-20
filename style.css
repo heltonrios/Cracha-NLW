@@ -6,9 +6,12 @@ html {
 body {
   display: grid;
   place-items: center;
-  /* justify-content: center; */
+}
 
-  background: lightblue;
+main {
+  background: url(images/background.svg);
+  width: 375px;
+  height: 812px;
 }
 
 h1 {
