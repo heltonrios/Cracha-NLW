@@ -6,53 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Helton Rios - DoWhile 2021</title>
   </head>
 
   <body>
     <main>
-      <div class="content">
+      <div class="container">
         <div class="avatar">
-          <img src="images/build.svg" alt="marca d'agua" />
+          <span>
+            <img src="images/build.svg" alt="marca d'agua" />
+          </span>
           <img
             src="https://lorempixel.com/185/185/people/"
             alt="foto usuário"
           />
         </div>
-        <h1>Helton Rios</h1>
-        <a href="instagram.com/heltonrios">
+        <h1 id="userName">Helton Rios</h1>
+        <a href="https://github.com/heltonrios" target="_blank">
           <img src="images/github.svg" alt="icone github" />
           heltonrios
         </a>
 
         <p>An instructor focused on helping pople start programming for web</p>
 
-        <ul>
-          <li>
-            <a href="https://youtube.com/rocketseat" target="_blank">
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://youtube.com/" target="_blank">
               <img src="images/youtube.svg" alt="imagem " />
             </a>
           </li>
 
-          <li>
-            <a href="https://facebook.com/heltonrios" target="_blank">
+          <li class="facebook">
+            <a href="https://facebook.com/" target="_blank">
               <img src="images/facebook.svg" alt="imagem facebook" />
             </a>
           </li>
 
-          <li>
-            <a href="https://instagram.com/heltonrios" target="_blank">
+          <li class="instagram">
+            <a href="https://instagram.com/" target="_blank">
               <img src="images/instagram.svg" alt="imagem instagram" />
             </a>
           </li>
 
-          <li>
-            <a href="https://twitter.com/heltonrios" target="_blank">
+          <li class="twitter">
+            <a href="https://twitter.com/" target="_blank">
               <img src="images/twitter.svg" alt="imagem twitter" />
             </a>
           </li>
         </ul>
       </div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
