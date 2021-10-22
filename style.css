@@ -15,6 +15,7 @@ html {
 body {
   display: grid;
   place-items: center;
+  background: grey;
 }
 
 main {
