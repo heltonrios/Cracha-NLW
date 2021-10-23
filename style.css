@@ -4,6 +4,7 @@
 
 body,
 html {
+  --black-background: #121214;
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
 
@@ -15,13 +16,17 @@ html {
 body {
   display: grid;
   place-items: center;
-  background: grey;
 }
 
 main {
-  background-image: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+.badge {
+  display: none;
 }
 
 .container {
@@ -80,4 +85,56 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+
+li {
+  position: relative;
+  opacity: 0.9;
+}
+
+li:hover {
+  top: -10px;
+  opacity: 1;
+}
+
+ul li a img {
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+  /* Estilo para tablet */
+}
+
+@media (min-width: 960px) {
+  /* estilo para desktop */
+
+  body {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-color: var(--black-background);
+  }
+
+  main {
+    border-radius: 0.5rem;
+    width: 22.5rem;
+    height: 33.75rem;
+    min-height: 540px;
+  }
+
+  .badge {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .badge .hole {
+    position: absolute;
+    background: #141313;
+    margin-left: 17rem;
+    margin-top: 1.5rem;
+    z-index: 1;
+    width: 100px;
+  }
+
+  .avatar {
+    margin-top: 3.4rem;
+  }
 }
