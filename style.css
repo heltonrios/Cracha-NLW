@@ -18,6 +18,10 @@ body {
   place-items: center;
 }
 
+.badge{
+  display: none;
+}
+
 main {
   background: url(images/background.svg) no-repeat center/cover;
   width: 100vw;
@@ -25,9 +29,6 @@ main {
   height: 100vh;
 }
 
-.badge {
-  display: none;
-}
 
 .container {
   max-width: 250px;
@@ -101,12 +102,9 @@ ul li a img {
   border-radius: 1rem;
 }
 
-@media (min-width: 768px) {
-  /* Estilo para tablet */
-}
 
-@media (min-width: 960px) {
-  /* estilo para desktop */
+@media (min-width: 768px) {
+  /* estilo para tablet e desktop */
 
   body {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
@@ -114,6 +112,8 @@ ul li a img {
   }
 
   main {
+    position: absolute;
+    top: 128px;
     border-radius: 0.5rem;
     width: 22.5rem;
     height: 33.75rem;
@@ -121,18 +121,12 @@ ul li a img {
   }
 
   .badge {
+    display: block;
     position: absolute;
     z-index: 1;
+    top: 0;
   }
 
-  .badge .hole {
-    position: absolute;
-    background: #141313;
-    margin-left: 17rem;
-    margin-top: 1.5rem;
-    z-index: 1;
-    width: 100px;
-  }
 
   .avatar {
     margin-top: 3.4rem;
